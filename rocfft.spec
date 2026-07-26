@@ -14,6 +14,8 @@ BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	rocm-cmake
 BuildRequires:	hipcc
+BuildRequires:	rocminfo
+BuildRequires:	clang-tools
 BuildRequires:	rocm-hip-devel
 BuildRequires:	clang >= %{rocm_llvm_maj_ver}
 # hiprtc is part of rocm-hip; ensure devel headers/cmake available
