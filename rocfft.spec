@@ -20,6 +20,7 @@ BuildRequires:	rocm-hip-devel
 BuildRequires:	clang >= %{rocm_llvm_maj_ver}
 # hiprtc is part of rocm-hip; ensure devel headers/cmake available
 BuildRequires:	pkgconfig(libffi)
+BuildRequires:	pkgconfig(sqlite3)
 
 ExclusiveArch:	%{x86_64} %{aarch64}
 
@@ -60,6 +61,7 @@ export LDFLAGS=$(printf '%s' "%{?__global_ldflags}" | sed -E 's/-mfpmath=[^ ]+//
 	-DUSE_HIPRAND=OFF \
 	-DROCFFT_BUILD_OFFLINE_TUNER=OFF \
 	-DROCFFT_MPI_ENABLE=OFF \
+-DSQLITE_USE_SYSTEM_PACKAGE=ON \
 	-DROCM_PATH=%{_prefix} \
 	-DCMAKE_PREFIX_PATH=%{_prefix} \
 	-G Ninja
