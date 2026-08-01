@@ -2,7 +2,7 @@
 
 Name:		rocfft
 Version:	7.14.0
-Release:	1
+Release:	2
 Summary:	HIP Fast Fourier Transform library
 License:	MIT AND BSD-3-Clause
 Group:		System/Libraries
@@ -22,7 +22,6 @@ BuildRequires:	clang >= %{rocm_llvm_maj_ver}
 BuildRequires:	pkgconfig(libffi)
 BuildRequires:	pkgconfig(sqlite3)
 
-ExclusiveArch:	%{x86_64} %{aarch64}
 
 %description
 rocFFT provides FFTs for HIP. Multi-ISA fat binary includes gfx803
