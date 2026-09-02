@@ -1,13 +1,13 @@
-# HIP FFT library (TheRock 7.14)
+# HIP FFT library (TheRock 10.0)
 
 Name:		rocfft
-Version:	7.14.0
-Release:	2
+Version:	10.0.0
+Release:	1
 Summary:	HIP Fast Fourier Transform library
 License:	MIT AND BSD-3-Clause
 Group:		System/Libraries
 URL:		https://github.com/ROCm/rocm-libraries
-Source0:	https://github.com/ROCm/rocm-libraries/releases/download/therock-7.14/rocfft.tar.gz#/rocfft-%{version}.tar.gz
+Source0:	https://github.com/ROCm/rocm-libraries/releases/download/therock-10.0/rocfft.tar.gz#/rocfft-%{version}.tar.gz
 
 BuildRequires:	rocm-rpm-macros
 BuildRequires:	cmake
