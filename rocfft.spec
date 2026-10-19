@@ -40,7 +40,7 @@ Provides:	rocfft-devel = %{EVRD}
 Headers and CMake package for rocfft.
 
 %prep
-%autosetup -n rocfft
+%autosetup -n rocfft -p1
 
 export CXX=hipcc
 export CC=clang
