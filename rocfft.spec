@@ -8,6 +8,8 @@ License:	MIT AND BSD-3-Clause
 Group:		System/Libraries
 URL:		https://github.com/ROCm/rocm-libraries
 Source0:	https://github.com/ROCm/rocm-libraries/releases/download/therock-10.1/rocfft.tar.gz#/rocfft-%{version}.tar.gz
+# HIP rtc compiles do not see a transitive declaration of strlen.
+Patch0:		0001-cstring-symbol-name.patch
 
 BuildRequires:	rocm-rpm-macros
 BuildRequires:	cmake
